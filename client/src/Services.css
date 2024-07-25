@@ -1,0 +1,75 @@
+/* css for services cards */
+.section-services {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .main-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img {
+    height: 150px;
+    background-color: #eee;
+  }
+  
+  .card-details {
+    padding: 20px;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .provider {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .price {
+    color: #28a745;
+    font-size: 1.2rem;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    color: #555;
+  }
+  

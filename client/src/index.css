@@ -1,0 +1,329 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* HOMEPAGE */
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero-section {
+    max-width: 600px;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #0056b3;
+}
+
+
+
+
+/*FORMS REGISTER LOGIN AND CONTACT */
+
+/* General styles */
+:root {
+  --primary-color: #000;
+  --secondary-color: #333;
+  --background-color: #f0f0f0;
+  --form-background: #ffffff;
+  --text-color: #333;
+  --border-color: #e0e0e0;
+  --placeholder-color: #999;
+  --focus-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Form section styles */
+.section-registration,
+.section-login,
+.section-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Form container styles */
+.registration-form,
+.login-form,
+.contact-form {
+  background-color: var(--form-background);
+  padding: clamp(30px, 5vw, 50px);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.registration-form::before,
+.login-form::before,
+.contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color), #666);
+}
+
+/* Heading styles */
+.main-heading {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+/* Form styles */
+/* General styles */
+:root {
+  --primary-color: #000;
+  --secondary-color: #333;
+  --background-color: #f0f0f0;
+  --form-background: #ffffff;
+  --text-color: #333;
+  --border-color: #e0e0e0;
+  --placeholder-color: #999;
+  --focus-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Form section styles */
+.section-registration,
+.section-login,
+.section-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Form container styles */
+.registration-form,
+.login-form,
+.contact-form {
+  background-color: var(--form-background);
+  padding: clamp(30px, 5vw, 50px);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.registration-form::before,
+.login-form::before,
+.contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color), #666);
+}
+
+/* Heading styles */
+.main-heading {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+  padding: clamp(12px, 2vw, 15px);
+  margin-bottom: 25px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: clamp(14px, 2vw, 16px);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  background-color: var(--form-background);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--focus-shadow);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder-color);
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+  color: var(--form-background);
+  padding: clamp(14px, 2vw, 18px);
+  border: none;
+  border-radius: 8px;
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn-submit:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Layout */
+.container.grid {
+  display: grid;
+  gap: 30px;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .registration-form,
+  .login-form,
+  .contact-form {
+    padding: clamp(20px, 4vw, 30px);
+  }
+
+  .main-heading {
+    margin-bottom: 30px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  textarea,
+  .btn-submit {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .registration-form,
+  .login-form,
+  .contact-form {
+    padding: 20px;
+  }
+
+  .main-heading {
+    margin-bottom: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  textarea,
+  .btn-submit {
+    margin-bottom: 15px;
+  }
+}
