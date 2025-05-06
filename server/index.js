@@ -19,14 +19,14 @@ const corsOptions = {
     credentials: true,
 };
 
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)); 
 
 //middleware to use json via postman
 app.use(express.json());
 
 //main route
 app.use("/api/auth", authRoute);
-app.use("/api/form", contactRoute);
+app.use("/api/form", contactRoute); 
 app.use("/api/data", serviceRoute);
 
 //admin route
@@ -36,7 +36,7 @@ app.use("/api/admin", adminRoute);
 app.use(errorMiddleware);
 
 
-connectDb().then(() => {
+connectDb(process.env.MONGODB_URI).then(() => {
     app.listen(PORT, () => {
         console.log(`Server is running at http://localhost:${PORT}`);
     });
